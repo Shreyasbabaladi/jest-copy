@@ -25,6 +25,7 @@ const FormPage = () => {
     email: "",
     linkedin: "",
     github: "",
+    portfolio: "",
     designation: "",
     coverLetter: "",
   });
@@ -42,6 +43,7 @@ const FormPage = () => {
     phoneNumber,
     email,
     linkedin,
+    portfolio,
     github,
     designation,
     coverLetter,
@@ -121,6 +123,13 @@ const FormPage = () => {
           textLable={"Linkedin"}
           placeholder={"URL"}
           handelOnChange={handelOnChange("linkedin")}
+        />
+        <InputputControler
+          type={"url"}
+          value={portfolio}
+          textLable={"Portfolio "}
+          placeholder={"URL"}
+          handelOnChange={handelOnChange("portfolio")}
         />
 
         <FormGroup row>
